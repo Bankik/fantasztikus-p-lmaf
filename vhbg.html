@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Csakra Levonás</title>
+<style>
+body {
+text-align: center;
+padding: 50px;
+}
+</style>
+</head>
+<body>
+<h1>Csakra Levonás</h1>
+<p>Az aktuális érték: <span id="currentValue">500</span></p>
+<button id="subtractButton">30-at levon</button>
+
+<script>
+let currentValue = 500;
+
+document.getElementById("subtractButton").addEventListener("click", function() {
+currentValue -= 30;
+document.getElementById("currentValue").textContent = currentValue;
+});
+</script>
+</body>
+</html>
